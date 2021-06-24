@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Group Test">
+    <test verbose="2" preserve-order="true" name="test1">
+        <groups>
+            <run>
+                <include name = "sum and sub"></include>
+                <include name = "mult and div"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="sumTest"></class>
+<!--            <class name="subTest"></class>-->
+<!--            <class name="multTest"></class>-->
+<!--            <class name="sumTest.java"></class>-->
+        </classes>
+    </test>
+</suite>
