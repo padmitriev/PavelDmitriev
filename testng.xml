@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite0" verbose="1"  >
+	<test name="exercise1" >
+		<classes>
+			<class name="hw2.ex1.Ex1" />
+		</classes>
+	</test>
+	<test name="exercise2" >
+		<classes>
+			<class name="hw2.ex2.Ex2" />
+		</classes>
+	</test>
+</suite>
