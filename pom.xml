@@ -16,7 +16,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <checkstyle.version>8.42</checkstyle.version>
         <testng.version>7.4.0</testng.version>
-        <selenium-java.version>3.141.59</selenium-java.version>
         <bonigarcia.version>4.4.3</bonigarcia.version>
         <testng.files.location>${basedir}/src/test/java/ru/training/at/hw1/</testng.files.location>
         <maven.compiler.version>3.8.1</maven.compiler.version>
@@ -24,14 +23,7 @@
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>3.141.59</version>
-        </dependency>
-
-                <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
@@ -46,24 +38,13 @@
             <artifactId>checkstyle</artifactId>
             <version>${checkstyle.version}</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.epam.tat.module4</groupId>-->
-<!--            <artifactId>calculator</artifactId>-->
-<!--            <scope>system</scope>-->
-<!--            <version>1.0</version>-->
-<!--            <systemPath>${basedir}/src/main/java/ru/training/at/hw1/calculator-1.0.jar</systemPath>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.testng</groupId>-->
-<!--            <artifactId>testng</artifactId>-->
-<!--            <version>${testng.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.testng</groupId>-->
-<!--            <artifactId>testng</artifactId>-->
-<!--            <version>RELEASE</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.epam.tat.module4</groupId>
+            <artifactId>calculator</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${basedir}/src/main/java/ru/training/at/hw1/calculator-1.0.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <profiles>
