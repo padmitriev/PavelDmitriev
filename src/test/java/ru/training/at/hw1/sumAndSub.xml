@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="sum_and_sub">
+    <test  name="sum_and_sub">
+        <classes>
+            <class name="ru.training.at.hw1.subTest" />
+            <class name="ru.training.at.hw1.sumTest" />
+        </classes>
+    </test>
+</suite>
