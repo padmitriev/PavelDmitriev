@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="mult_and_div">
+    <test  name="mult_and_div">
+        <classes>
+            <class name="ru.training.at.hw1.multTest" />
+            <class name="ru.training.at.hw1.divTest" />
+        </classes>
+    </test>
+</suite>
