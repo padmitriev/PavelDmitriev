@@ -66,15 +66,25 @@ public class Ex1 {
         assertEquals(headerElements.get(3).getText(), "METALS & COLORS");
 
 //  6. Assert that there are 4 images on the Index Page and they are displayed
-        List<WebElement> allImages = driver.findElements(By.tagName("img"));
-        driver.switchTo().frame("first_frame");
-        List<WebElement> iframe1 = driver.findElements(By.tagName("img"));
-        allImages.addAll(iframe1);
-        assertEquals(allImages.size(), 3);
-        driver.switchTo().defaultContent();
+        List<WebElement> allImages = driver.findElements(By.xpath("//div[contains(@class,'benefit-icon')]"));
+        assertEquals(allImages.size(), 4);
 
 //  7. Assert that there are 4 texts on the Index Page under icons and they have proper text
-//        What texts?
+        List<WebElement> allTexts = driver.findElements(By.xpath("//span[contains(@class,'benefit-txt')]"));
+        String[] texts =
+                {"To include good practices\n" +
+                        "and ideas from successful\n" +
+                        "EPAM project",
+                        "To be flexible and\n" +
+                                "customizable",
+                        "To be multiplatform",
+                        "Already have good base\n" +
+                                "(about 20 internal and\n" +
+                                "some external projects),\n" +
+                                "wish to get more…"};
+        for (int i=0; i<allImages.size(); i++) {
+            assertEquals(allTexts.get(i).getText(), texts[i]);
+        }
 
 //  8. Assert that there is the iframe with “Frame Button” exist
         List<WebElement> iframes = driver.findElements(By.tagName("iframe"));
